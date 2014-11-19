@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Apprenticeship Program</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="apprenticeship">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container">
+
+      <div ng-include="'views/main.html'"></div>
+
+      <div class="title">
+        Apprenticeship Program
+      </div>
+
+      <hr>
+      <div class="quote">
+        “You teach me, I forget. You show me, I remember. You involve me,
+        I understand.”
+        <div class="name">- E. O. Wilson</div>
+      </div>
+      <hr>
+
+      <div class="description">
+        <div class="bold">Apprenticeships are not just for begginers</div>
+        <div>
+          This program will drive you into a professional environment that will
+          set you up for hiring, either by Group Buddies or one of our partners.
+        </div>
+
+        <div class="programs">
+          <div class="developer">
+            <h1>Development Apprenticeship</h1>
+            <p>
+              This program will dive you into a professional environment that will
+              set you up for hiring, either by Group Buddies or one of our partners.
+            </p>
+            <button class="devApply">Apply for Apprenticeship</button>
+          </div>
+
+          <div class="designer">
+            <h1>Development Apprenticeship</h1>
+            <p>
+              This program will dive you into a professional environment that will
+              set you up for hiring, either by Group Buddies or one of our partners.
+            </p>
+            <button class="designerApply">Apply for Apprenticeship</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimony">
+        <hr>
+        <h1 class="name">João Justo, Developer</h1>
+        <p class="role">Featured Alumni</p>
+        “You teach me, I forget. You show me, I remember. You involve me,
+         I understand.”
+         <hr>
+      </div>
+
+      <div ng-controller="applicantData">
+        <form class="applicantForm">
+          What is your name?<br/>
+          <input type="text" ng-model="user.name"/><br/>
+          Where should we reach you? Email would be lovely.<br/>
+          <input type="email" ng-model="user.contact"/><br/>
+          What makes you special? How much fun would it be for us to work with you?<br/>
+          <input type="text" ng-model="user.superPower"/><br/>
+          Show us what you can do. It might be some code sample or the link for your portfolio<br/>
+          <input type="text" ng-model="user.work"/><br/>
+          What is your github/bitbucket username?<br/>
+          <input type="text" ng-model="user.github"/><br/>
+          <button ng-click="update(user)"
+              ng-disabled="form.$invalid || isUnchanged(user)">submit</button>
+        </form>
+      </div>
+
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

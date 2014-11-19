@@ -1,5 +1,4 @@
-(function(angular) {
-  'use strict';
+'use strict';
 
 angular.module('apprenticeship', [])
   .controller('applicantData', ['$scope', function($scope) {
@@ -32,4 +31,3 @@ angular.module('apprenticeship', [])
     };
 
   }]);
-})(window.angular);
