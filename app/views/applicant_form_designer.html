@@ -1,0 +1,30 @@
+<div ng-controller="applicantData">
+  <form class="applicantForm">
+    <div class="field">
+      <label>Name</label>
+      <input type="text" ng-model="user.name"/>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" ng-model="user.contact"/>
+    </div>
+    <div class="field">
+      <label>Phone</label>
+      <input type="number" ng-model="user.phone"/>
+    </div>
+    <div class="field">
+      <label>Give us a link to some of your work(can be dribble, behance, your site, etc)</label>
+      <input type="text" ng-model="user.work"/><br/>
+    </div>
+    <div class="field">
+      <label>How do you want to grow as a designer</label>
+      <input type="text" ng-model="user.objectives"/><br/>
+    </div>
+    <div class="field">
+      <label>Tell us why you think this Apprenticeship is right for you</label>
+      <input type="text" ng-model="user.why"/><br/>
+    </div>
+    <button ng-click="update(user)"
+    ng-disabled="form.$invalid || isUnchanged(user)">submit</button>
+  </form>
+</div>
