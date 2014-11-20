@@ -11,10 +11,10 @@ angular.module('apprenticeship', [])
     $scope.authorize = function() {
       Trello.authorize({
         interactive: true,
-        type: "popup",
-        expiration: "never",
-        name: "surveyrequest",
-        persist: "true",
+        type: 'popup',
+        expiration: 'never',
+        name: 'surveyrequest',
+        persist: true,
         success: $scope.onAuthorizeSuccessful(),
         error: $scope.onFailedAuthorization(),
         scope: { read: true, write: true}
@@ -27,7 +27,7 @@ angular.module('apprenticeship', [])
 
 
     $scope.onFailedAuthorization = function() {
-      console.log("Authorization failed.");
+      console.log('Authorization failed.');
     };
 
   }]);
