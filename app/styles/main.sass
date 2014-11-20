@@ -1,79 +1,103 @@
-body
-  font-size: 18px
-  text-align: center
-  color: #637D99
+$title-size: 40px
+$subtitle-size: 30px
+$featured-size: 22px
+$text-size: 18px
 
-.title
-  font-size: 40px
-  color: #637D99
+$gray: #637D99
+$blue: #0091DE
+$black: #323D4B
+$orange: #DA9500
+$light-gray: #E8EEF5
+
+
+body
+  color: $gray
+  text-align: center
+  font-size: $text-size
+
+.header
   margin: 80px 0 80px 0
 
-.quote
-  font-size: 30px
-  color: #323D4B
+.title
+  font-size: $title-size
 
-.name
-  color: #0091DE
-  font-size: 22px
-  margin-top: 10px
+.subtitle
+  color: $black
+  font-size: $subtitle-size
+
+.featured
+  color: $black
+  text-align: left
+  font-size: $featured-size
+
+.quote
+  margin: 40px 0 40px 0
+
+  p
+    color: $black
+    font-size: $subtitle-size
+    font-style: italic
+
+  .author
+    color: $blue
+    font-size: $featured-size
+    margin-top: 10px
+    margin-bottom: 30px
 
 .description
   text-align: left
-  margin-top: 40px
-  font-size: 22px
-
-  p
-    font-size: 18px
-
-.bold
-  color: #323D4B
-  margin-bottom: 20px
 
 .programs
-  h1
+  div
     margin-top: 80px
-    font-size: 30px
+    font-size: $featured-size
 
-.developer
-  h1
-    color: #0091DE
+  .developer
+    color: $blue
 
-.designer
-  h1
-    color: #DA9500
+  .designer
+    color: $orange
 
-.quote
-  h1
-    font-size: 30px
+  button
+    width: 240px
+    height: 50px
+    color: #fff
+    border: 1px solid #fff
+    border-radius: 10px
+    font-size: 18px
+
+  .devApply
+    border-color: #0091DE
+    background: #0091DE
+
+  .designerApply
+    border-color: #DA9500
+    background: #DA9500
 
 .testimony
   text-align: left
   margin-top: 80px
 
-  h1
-    font-size: 30px
+  .author
+    color: $blue
+    font-size: $featured-size
     margin: 40px 0 0 0
 
+  .role
+    color: $black
+
   p
-    font-size: 22px
-    margin: 0 0 10px 0
-    color: #323D4B
+    margin-bottom: 40px
+    font-style: italic
 
-button
-  width: 240px
-  height: 50px
-  color: #fff
-  border: 1px solid #fff
-  border-radius: 10px
-  font-size: 18px
+.faq
+  margin-top: 80px
 
-.devApply
-  border-color: #0091DE
-  background: #0091DE
+  .title
+    margin-bottom: 80px
 
-.designerApply
-  border-color: #DA9500
-  background: #DA9500
+  p
+    text-align: left
 
 form
   display: none
