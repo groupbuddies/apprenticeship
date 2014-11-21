@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('apprenticeship', [])
+angular.module('apprenticeship', ['ngAnimate'])
   .controller('appController', ['$scope', function($scope) {
     $scope.user = {
       click: false

@@ -25,7 +25,7 @@
       <div class="title">Apprenticeship Program</div>
     </div>
 
-    <div class="container" ng-hide="user.click">
+    <div class="container" ng-show="!user.click">
       <div class="quote" ng-include="'views/quote.html'"></div>
       <div class="description" ng-include="'views/program_description.html'"></div>
       <div class="testimony" ng-include="'views/program_testimony.html'"></div>
@@ -59,6 +59,7 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
