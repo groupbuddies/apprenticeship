@@ -1,4 +1,11 @@
 @media screen and (min-width: 900px)
+  body
+    border: 100px solid $white
+    margin: 0
+
+  .footer
+    position: relative
+
   .forms
     max-width: 700px
     margin-left: auto
@@ -15,7 +22,7 @@
 
       p
         position: absolute
-        top: 365px
+        top: 465px
         white-space: nowrap
         left: 50%
         transform: translateX(-50%)
@@ -34,12 +41,21 @@
         max-width: 150px
 
     .testimony
+      display: table
+      height: 250px
+
       .image
-        display: inline-block
+        display: table-cell
+        vertical-align: middle
+        padding-right: 30px
 
       .text
-        display: inline-block
+        display: table-cell
+        vertical-align: middle
         max-width: 500px
+
+        p
+          margin-bottom: 20px
 
     .faq
       .featured

@@ -1,30 +1,37 @@
 <div>
-  <form class="applicantForm">
+  <div class="header">
+    <img src="images/logo-gb.png">
+    <div class="title">Design Apprenticeship</div>
+  </div>
+
+  <form class="form-content" accept-charset="UTF-8" action="https://formkeep.com/f/6f9247c5c02a" method="POST">
+    <input type="hidden" name="utf8" value="✓">
     <div class="field">
       <label>Name</label>
-      <input type="text" ng-model="user.name"/>
+      <input type="text" name="name" ng-model="user.name"/>
     </div>
-    <div class="field">
+    <div class="field email">
       <label>Email</label>
-      <input type="email" ng-model="user.contact"/>
+      <input type="email" name="email" ng-model="user.contact"/>
     </div>
-    <div class="field">
+    <div class="field phone">
       <label>Phone</label>
-      <input type="number" ng-model="user.phone"/>
+      <input type="text" name="phone" ng-model="user.phone"/>
     </div>
     <div class="field">
       <label>Give us a link to some of your work(can be dribble, behance, your site, etc)</label>
-      <input type="text" ng-model="user.work"/><br/>
+      <input type="text" name="work" ng-model="user.work"/><br/>
     </div>
     <div class="field">
       <label>How do you want to grow as a designer</label>
-      <input type="text" ng-model="user.objectives"/><br/>
+      <input type="text" name="objectives" ng-model="user.objectives"/><br/>
     </div>
     <div class="field">
       <label>Tell us why you think this Apprenticeship is right for you</label>
-      <input type="text" ng-model="user.why"/><br/>
+      <input type="text" name="why" ng-model="user.why"/><br/>
     </div>
-    <button ng-click="update(user)"
-    ng-disabled="form.$invalid || isUnchanged(user)">submit</button>
+    <div class="submit">
+      <button class="designerApply" type="submit" value="Submit">Submit Application</button>
+    </div>
   </form>
 </div>

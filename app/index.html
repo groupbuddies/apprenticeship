@@ -20,21 +20,34 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <img src="images/logo-gb.png">
-      <div class="title">Apprenticeship Program</div>
-    </div>
+    <div class="container" ng-show="!user.designer && !user.dev && !user.devPrograms && !user.designerPrograms">
+      <div class="header">
+        <img src="images/logo-gb.png">
+        <div class="title">Apprenticeship Program</div>
+      </div>
 
-    <div class="container" ng-show="!user.click">
       <div class="quote" ng-include="'views/quote.html'"></div>
       <div class="description" ng-include="'views/program_description.html'"></div>
       <div class="testimony" ng-include="'views/program_testimony.html'"></div>
       <div class="faq" ng-include="'views/faq.html'"></div>
     </div>
-    <div class="forms" ng-show="user.click">
-      <div class="applicant-form" ng-include="'views/applicant_form_designer.html'"></div>
+    <div class="container" ng-show="user.devPrograms && !user.dev">
+      <div class="dev_programs" ng-include="'views/dev_programs.html'"></div>
     </div>
-    <div class="footer" ng-include="'views/footer.html'"></div>
+    <div class="container" ng-show="user.designerPrograms && !user.designer">
+      <div class="designer_programs" ng-include="'views/designer_programs.html'"></div>
+    </div>
+    <div class="container form">
+      <div class="forms" ng-show="user.designer">
+        <div class="applicant-form-designer" ng-include="'views/applicant_form_designer.html'"></div>
+      </div>
+      <div class="forms" ng-show="user.dev">
+        <div class="applicant-form-dev" ng-include="'views/applicant_form_dev.html'"></div>
+      </div>
+    </div>
+    <div class="container-footer">
+      <div class="footer" ng-include="'views/footer.html'"></div>
+    </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

@@ -1,13 +1,49 @@
-$input-size: 30px
+$input-size: 50px
 
-.applicant-form
+.applicant-form-designer, .designer_programs
   text-align: left
+  .header
+    text-align: center
+    color: $orange
+
+.applicant-form-dev, .dev_programs
+  text-align: left
+  .header
+    text-align: center
+    color: $blue
+
+.form-content
+  text-align: left
+  padding-top: 80px
+  padding-bottom: 80px
+  border-top: 1px solid $light-gray
+  border-bottom: 1px solid $light-gray
 
   .field
+    margin-bottom: 20px
+
     label
+      color: $black
       display: block
+      margin-bottom: 10px
 
     input
       width: 100%
+      border: 1px solid $light-gray
       height: $input-size
       line-height: $input-size
+
+      &:focus
+        outline: 0
+
+  .field.email
+    width: 60%
+    display: inline-block
+
+  .field.phone
+    width: 30%
+    margin-left: 9.3%
+    display: inline-block
+
+  .submit
+    text-align: right
