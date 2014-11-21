@@ -1,11 +1,14 @@
 'use strict';
 
 angular.module('apprenticeship', [])
-  .controller('applicantData', ['$scope', function($scope) {
-    $scope.user = {};
+  .controller('appController', ['$scope', function($scope) {
+    $scope.user = {
+      click: false
+    };
 
     $scope.update = function(user) {
-      $scope.authorize();
+      //$scope.authorize();
+      user.click = !user.click
     };
 
     $scope.authorize = function() {
