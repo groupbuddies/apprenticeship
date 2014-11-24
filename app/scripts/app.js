@@ -10,13 +10,6 @@ var apprenticeship = angular.module('apprenticeship', modules)
   .controller('appController', ['$scope', function($scope) {
   }])
 
-apprenticeship.config(function($locationProvider) {
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  });
-});
-
 apprenticeship.config(function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise("/");
