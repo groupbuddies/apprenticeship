@@ -28,13 +28,14 @@
 
 ### Deploying changes to `gh-pages`
 
-You first have to initialize your copy of the `gh-pages` branch, to make
-deploying easier:
+  You first have to initialize your copy of the `gh-pages` branch, to make
+  deploying easier:
 
-  # inside the apprenticeship project directory
-  git clone git@github.com:groupbuddies/apprenticeship dist
-  cd dist
-  git checkout gh-pages
+    # inside the apprenticeship project directory
+
+    git clone git@github.com:groupbuddies/apprenticeship dist
+    cd dist
+    git checkout gh-pages
 
 Now any changes you make to the `dist` directory can go live with:
 
