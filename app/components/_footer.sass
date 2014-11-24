@@ -2,35 +2,39 @@
   height: 200px
   background: $black
   margin-top: 80px
-  position: absolute
   width: 100%
+  position: absolute
   left: 0
+  display: table
 
   ul
-    width: 630px
-    padding: 0
-    padding-top: 2em
-    margin-left: auto
-    margin-right: auto
+    padding: 10px
+    text-align: center
+
+    .column
+      display: inline-block
+      margin-top: 0
+
+      &.right
+        margin-left: 40px
 
   a
     color: $gray
     cursor: pointer
-    padding-left: 1em
-    padding-right: 1em
-    border-right: 1px solid #000
 
   li
-    display: inline-block
+    display: block
+    text-align: left
+    margin-top: 10px
 
-  li:last-child a
-    border: none
-
-  div
+  .copyright
     color: #fff
-    text-align: right
-    width: 600px
+    display: inline-block
+    text-align: center
+    padding: 10px
+    font-size: 14px
+
+  .container
+    width: 95%
     margin-left: auto
     margin-right: auto
-    padding-right: 20px
-    margin-top: 50px

@@ -1,23 +1,34 @@
+$animation-time: 0.5s
+
 .ng-enter
+
+  .quote
+    margin: 40px auto 40px auto
+    padding: 0
+
+    p
+      position: inherit
+      top: 465px
+      white-space: normal
+      left: 0
+      transform: translateX(0)
+
   z-index: 9999
-  -webkit-animation: scaleUp 0.7s both ease-in
-  -moz-animation: scaleUp 0.7s both ease-in
-  animation: scaleUp 0.7s both ease-in
+  -webkit-animation: scaleUp $animation-time both ease-in
+  -moz-animation: scaleUp $animation-time both ease-in
+  animation: scaleUp $animation-time both ease-in
 
 /* scale up
 @keyframes scaleUp
   from
     opacity: 0.3
-    transform: scale(0.8)
 
 
 @-moz-keyframes scaleUp
   from
     opacity: 0.3
-    -moz-transform: scale(0.8)
 
 
 @-webkit-keyframes scaleUp
   from
     opacity: 0.3
-    -webkit-transform: scale(0.8)

@@ -1,9 +1,9 @@
 'use strict';
 
-var modules = ['ui.router', 'ngAnimate'];
+var modules = ['ui.router'];
 
 var scrollToTop = function () {
-  $('html, body').animate({ scrollTop: 0 }, 700);
+  $('html, body').animate({ scrollTop: 0 }, 10);
 }
 
 var apprenticeship = angular.module('apprenticeship', modules)
@@ -38,6 +38,11 @@ apprenticeship.config(function($stateProvider, $urlRouterProvider) {
     .state('designer_apply', {
       url: "/designer_apply",
       templateUrl: "views/applicant_form_designer.html",
+      onEnter: scrollToTop
+    })
+    .state('success', {
+      url: "/success",
+      templateUrl: "views/success.html",
       onEnter: scrollToTop
     });
 });
