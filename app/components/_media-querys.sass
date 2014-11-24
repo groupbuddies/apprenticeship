@@ -4,6 +4,10 @@
     border-bottom: 0
     margin: 0
 
+  p, .featured
+    padding-left: 5%
+    padding-right: 5%
+
   .footer
     position: relative
 
@@ -20,22 +24,12 @@
         &.right
           margin-left: 0
 
-          a
-            border-left: 1px solid #000
-
-          li:last-child a
-            border: none
-
     a
       padding-left: 1em
       padding-right: 1em
-      border-right: 1px solid #000
 
     li
       display: inline-block
-
-    li:last-child a
-      border: none
 
     .container
       width: 650px
@@ -43,10 +37,10 @@
       display: inline-block
 
     .copyright
-      width: 270px
+      width: 300px
       font-size: $text-size
       text-align: right
-      margin-right: 25px
+      margin-right: 45px
       padding-top: 0
       display: inline-block
 
@@ -66,46 +60,60 @@
       display: inline-block
 
   .container
-    width: 700px
+    min-width: 700px
+    max-width: 960px
     margin-left: auto
     margin-right: auto
 
     .featured
       text-align: center
 
+  .testimony
+    display: table
+    height: 250px
+    margin-left: auto
+    margin-right: auto
+
+    .image
+      display: table-cell
+      vertical-align: middle
+      padding-right: 30px
+
+    .text
+      display: table-cell
+      vertical-align: middle
+      max-width: 500px
+
+      p
+        margin-bottom: 40px
+
+  .programs
+    text-align: center
+    padding-left: 5%
+    padding-right: 5%
+
     .column
-      display: inline-block
-      max-width: 320px
       margin-top: 0
+      display: inline-block
+      width: 45%
+      text-align: left
 
       &.right
+        margin-top: 0
         margin-left: 55px
 
       div
         max-width: 150px
 
-    .testimony
-      display: table
-      height: 250px
-
-      .image
-        display: table-cell
-        vertical-align: middle
-        padding-right: 30px
-
-      .text
-        display: table-cell
-        vertical-align: middle
-        max-width: 500px
-
-        p
-          margin-bottom: 40px
-
-    .faq
-      .featured
-        text-align: left
+  .faq
+    .featured
+      text-align: left
 
 @media screen and (min-width: 1200px)
+  body
+    border-left: 130px solid $white
+    border-right: 130px solid $white
+
   .quote
     margin: 40px auto 40px auto
     padding-top: 6rem
@@ -116,3 +124,8 @@
       white-space: nowrap
       left: 50%
       transform: translateX(-50%)
+
+@media screen and (min-width: 1600px)
+  body
+    border-left: 200px solid $white
+    border-right: 200px solid $white
