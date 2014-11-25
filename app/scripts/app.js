@@ -20,23 +20,23 @@ apprenticeship.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "views/index.html",
       onEnter: scrollToTop
     })
-    .state('developer_programs', {
-      url: "/dev_programs",
+    .state('developer', {
+      url: "/developer",
       templateUrl: "views/dev_programs.html",
       onEnter: scrollToTop
     })
-    .state('designer_programs', {
-      url: "/designer_programs",
+    .state('designer', {
+      url: "/designer",
       templateUrl: "views/designer_programs.html",
       onEnter: scrollToTop
     })
     .state('developer_apply', {
-      url: "/developer_apply",
+      url: "/developer/apply",
       templateUrl: "views/applicant_form_dev.html",
       onEnter: scrollToTop
     })
     .state('designer_apply', {
-      url: "/designer_apply",
+      url: "/designer/apply",
       templateUrl: "views/applicant_form_designer.html",
       onEnter: scrollToTop
     })
