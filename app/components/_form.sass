@@ -1,5 +1,8 @@
 $input-size: 50px
 
+::-webkit-input-placeholder
+  line-height: $input-size
+
 .applicant-form-designer, .designer_programs
   text-align: left
   .header
@@ -16,6 +19,9 @@ $input-size: 50px
   text-align: left
   padding-top: 80px
   padding-bottom: 80px
+  max-width: 80%
+  margin-left: auto
+  margin-right: auto
   border-top: 1px solid $light-gray
   border-bottom: 1px solid $light-gray
 
@@ -23,14 +29,14 @@ $input-size: 50px
     margin-bottom: 20px
     padding-right: 40px
     padding-left: 20px
+    font-family: "adobe-garamond-pro"
 
     label
       color: $black
       display: block
       margin-bottom: 10px
-      font-family: "adobe-garamond-pro"
 
-    input
+    input, textarea
       color: $gray
       width: 100%
       border: 1px solid $form-border
@@ -38,10 +44,17 @@ $input-size: 50px
       line-height: $input-size
       font-size: $text-size
       padding-left: 20px
+      padding-right: 20px
+      font-family: "adobe-garamond-pro"
 
       &:focus
         outline: 0
         border-color: $gray
+
+    textarea
+      height: 150px
+      resize: none
+      line-height: 30px
 
     ::-webkit-input-placeholder
       line-height: 50px
