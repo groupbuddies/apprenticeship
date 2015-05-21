@@ -18,6 +18,7 @@ $Theme-color-yellowOrange: #fab23c;
 
 // Color Usage
 $Theme-palette-text-body-default: $Theme-color-poloBlue;
+$Theme-palette-outline: $Theme-color-yellowOrange;
 
 // Spacing
 $Theme-spacing-default: 50px;
@@ -25,13 +26,20 @@ $Theme-spacing-large: 100px;
 $Theme-spacing-small: 25px;
 $Theme-spacing-xSmall: 10px;
 
+// Spacing Usage
+$Theme-spacing-pane-horizontal: $Theme-spacing-default;
+$Theme-spacing-pane-vertical: 100px;
+
+// Sizes
+$Theme-sizes-container-width: 600px;
+
 // Typography
 $Theme-typography-fontWeight-bold: 700;
 $Theme-typography-fontWeight-medium: 500;
 $Theme-typography-fontWeight-regular: 400;
-$Theme-typography-fontFamily-subvisual: "futura-pt", sans-serif;
-$Theme-typography-fontFamily-heading: "merriweather", serif;
-$Theme-typography-fontFamily-bodyText: "pt-serif", serif;
+$Theme-typography-fontFamily-subvisual: 'futura-pt', sans-serif;
+$Theme-typography-fontFamily-heading: 'merriweather', serif;
+$Theme-typography-fontFamily-bodyText: 'pt-serif', serif;
 $Theme-font-sizes: (
   mobile: (
     // TODO: add mobile measurements

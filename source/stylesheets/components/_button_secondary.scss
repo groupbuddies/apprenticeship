@@ -17,9 +17,14 @@
 $ButtonSecondary-default-background: transparent;
 $ButtonSecondary-default-color: $Theme-color-brightTurquoise;
 $ButtonSecondary-default-hover: $Theme-color-white;
+
 $ButtonSecondary-inverted-background: transparent;
 $ButtonSecondary-inverted-color: $Theme-color-white;
 $ButtonSecondary-inverted-hover: $Theme-color-brightTurquoise;
+
+$ButtonSecondary-highlighted-background: transparent;
+$ButtonSecondary-highlighted-color: $Theme-color-yellowOrange;
+$ButtonSecondary-highlighted-hover: $Theme-color-white;
 
 .ButtonSecondary {
   @include font-properties(subvisual, small);
@@ -42,6 +47,18 @@ $ButtonSecondary-inverted-hover: $Theme-color-brightTurquoise;
   &:hover {
     background-color: $ButtonSecondary-default-color;
     color: $ButtonSecondary-default-hover;
+  }
+}
+
+.ButtonSecondary.ButtonSecondary--highlighted {
+  background-color: $ButtonSecondary-highlighted-background;
+  border-color: $ButtonSecondary-highlighted-color;
+  color: $ButtonSecondary-highlighted-color;
+
+  &:hover {
+    background-color: $ButtonSecondary-highlighted-color;
+    border-color: $ButtonSecondary-highlighted-color;
+    color: $ButtonSecondary-highlighted-hover;
   }
 }
 

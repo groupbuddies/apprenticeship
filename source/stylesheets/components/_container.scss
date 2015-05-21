@@ -42,7 +42,7 @@
   flex-direction: column;
   align-items: center;
 
-  max-width: 600px;
+  max-width: $Theme-sizes-container-width;
   padding: 0 $Theme-spacing-default;
 }
 

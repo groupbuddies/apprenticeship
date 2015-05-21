@@ -1,14 +1,13 @@
 # Required
 language: 'en-us'
-url: 'http://www.subvisual.co'
-human_url: 'subvisual.co'
-name: 'Subvisual Website'
-description: 'Website for Subvisual'
-title: 'Subvisual'
+url: http://www.subvisual.co/apprenticeship
+human_url: subvisual.co/apprenticeship
+name: Apprenticeship Subvisual Website
+description: Website for Subvisual's Apprenticeship
+title: Apprenticeship Subvisual
 
 # Optional
 logo_image_name: ''
 logo_image_path: ''
 twitter_handle: ''
 # facebook_app_id: ''
-

@@ -1,0 +1,32 @@
+// Pane
+//
+// Full width container with a unique background
+//
+// default - Default pane
+// .Pane--light - Alternate light version
+// .Pane--dark - Alternate dark version
+//
+// markup:
+// <div class="Pane {$modifiers}"></div>
+//
+// Styleguide 1.8
+
+@import '../reset';
+@import '../theme_vars';
+
+.Pane {
+  width: 100%;
+  overflow: hidden;
+
+  padding: $Theme-spacing-pane-vertical 0;
+  background-color: white;
+}
+
+.Pane.Pane--light {
+  background-color: $Theme-color-polar;
+}
+
+.Pane--dark {
+  color: white;
+  background-color: $Theme-color-horizon;
+}

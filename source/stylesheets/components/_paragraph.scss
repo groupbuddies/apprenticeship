@@ -1,0 +1,20 @@
+// Paragraph
+//
+// Creates space under a block of text.
+// It should be used to separate multiple blocks of text like paragraphs.
+//
+// default - A default paragraph.
+//
+// markup:
+// <p class="Paragraph {$modifiers}">
+//   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+// </p>
+//
+// Styleguide 1.4
+
+@import '../reset';
+@import '../theme_vars';
+
+.Paragraph {
+  margin-bottom: $Theme-spacing-small;
+}

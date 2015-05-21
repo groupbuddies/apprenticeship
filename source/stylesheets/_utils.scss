@@ -1,0 +1,11 @@
+.u-smallOnly {
+  @include media(">tablet") {
+    display: none;
+  }
+}
+
+.u-desktopOnly {
+  @include media("<=tablet") {
+    display: none;
+  }
+}
