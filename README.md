@@ -1,6 +1,3 @@
-# We are Subvisual
-
-We are subvisual and this is our website.
 
 ## Development
 
