@@ -3,6 +3,8 @@
 // Styles body text's font and color properties.
 //
 // default - Most commonly used text
+// .Text--large - Text with increased size.
+// .Text--dark - Text with darker color.
 //
 // markup:
 // <div class="Text {$modifiers}">
@@ -20,4 +22,12 @@
 
   font-family: $Theme-typography-fontFamily-bodyText;
   font-weight: $Theme-typography-fontWeight-regular;
+}
+
+.Text.Text--large {
+  @include font-properties(bodyText, large);
+}
+
+.Text.Text--dark {
+  color: $Theme-palette-text-body-dark;
 }

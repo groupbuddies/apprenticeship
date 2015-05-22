@@ -17,6 +17,10 @@
 @import 'font-awesome';
 
 .EngagementLink {
+  position: relative;
+
+  padding-left: $Theme-spacing-default;
+
   color: $Theme-color-yellowOrange;
 
   font-family: $Theme-typography-fontFamily-subvisual;
@@ -26,7 +30,12 @@
 
   &:before {
     @include fa-icon();
-    padding-right: $Theme-spacing-small;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 25px;
 
     content: $fa-var-arrow-circle-right;
   }
