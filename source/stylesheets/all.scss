@@ -4,3 +4,11 @@
 @import 'blue/utilities/base';
 
 @import 'header';
+
+.Grid {
+  @include container(2, 'Grid-cell') {
+    &, & .Grid-cell {
+      padding: 0;
+    }
+  }
+}

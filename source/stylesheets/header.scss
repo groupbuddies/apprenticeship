@@ -1,14 +1,11 @@
 @import 'blue/components/container';
 
 .Header {
+  @include container(1, 'Header-column');
+
   overflow: hidden;
   position: relative;
   z-index: 0;
-
-  @include container(1, 'Header-column') {
-    .Header-column {
-    }
-  }
 
   &:before,
   &:after {
@@ -40,13 +37,15 @@
   }
 }
 
+.Header-logo {
+  height: 90px;
+}
+
 @keyframes clouds-animation {
   from {
-    /*background-position: 0% 0;*/
     transform: translateX(100%);
   }
   to {
-    /*background-position: -1401px 0;*/
     transform: translateX(-100%);
   }
 }
