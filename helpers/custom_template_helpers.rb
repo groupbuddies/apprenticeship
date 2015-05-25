@@ -24,6 +24,13 @@ module CustomTemplateHelpers
     current_page.data.image_path || data.site.logo_image_path
   end
 
+  def nav_item(link_text, page_url, page_name = '', options = {})
+    options[:class] ||= "Nav-item"
+    page_name = page_url[1..-1] if page_name.empty?
+    options[:class] << " is-selected" if current_page.data.page == page_name
+    content_tag(:li, link_to(link_text, page_url, class: 'Nav-link'), options)
+  end
+
   # Social share URLs
   def twitter_url
     "https://twitter.com/share?text=“#{page_title}”" +
