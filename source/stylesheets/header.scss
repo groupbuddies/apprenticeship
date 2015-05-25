@@ -1,0 +1,52 @@
+@import 'blue/components/container';
+
+.Header {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  @include container(1, 'Header-column') {
+    .Header-column {
+    }
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: image-url('clouds.svg');
+    background-size: contain;
+    background-repeat: repeat;
+
+    transition: all 1s linear;
+    transform: translateX(0);
+
+    content: ' ';
+
+    animation-name:  clouds-animation;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  &:before {
+    animation-delay: -50s;
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    /*background-position: 0% 0;*/
+    transform: translateX(100%);
+  }
+  to {
+    /*background-position: -1401px 0;*/
+    transform: translateX(-100%);
+  }
+}
