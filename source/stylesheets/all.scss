@@ -1,14 +1,10 @@
 @charset 'utf-8';
 
-@import 'blue/components/base';
-@import 'blue/utilities/base';
+@import 'stylesheets/components/base';
+@import 'stylesheets/utilities/base';
 
-@import 'header';
+@import 'hero';
 
-.Grid {
-  @include container(2, 'Grid-cell') {
-    &, & .Grid-cell {
-      padding: 0;
-    }
-  }
+.Paragraph {
+  margin-bottom: $Theme-spacing-xSmall;
 }

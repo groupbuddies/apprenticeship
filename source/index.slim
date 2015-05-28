@@ -4,94 +4,82 @@ page: apprenticeship
 nav_class: Nav--dark
 ---
 
-.Panel
-  .Layout
-    .Layout-navPlaceholder
-    header.Header
-      .Header-clouds1
-      .Header-clouds2
-      .Header-column
-        = image_tag 'logo.png', class: 'Header-logo'
+= partial 'home/hero'
 
-        .u-textAlignCenter
-          h1.Heading.Heading--branda.Heading--large
-            span.Heading-dark> Our
-            span.Heading-highlight> Apprenticeship
-            span.Heading-dark Program
-
-        .Layout-smallMargin
-        p.u-exceptSmall Our apprenticeship program will dive you into a professional environment that’ll set you up for hiring.
-
-        .Layout-smallMargin
-        .Text.Text--large.Text--dark
-          p.u-italic “You teach me, I forget. <br> You show me, I remember. </br> You involve me, I understand.”
-    .Layout-defaultMargin
-
-  .Panel.Panel--action.u-onlySmall
-    section.Container
-      .Container-column
-        .Heading.Heading-light
-          p.Paragraph Our apprenticeship program will dive you into a professional environment that’ll set you up for hiring.
-
-        .Paragraph
-          button.ButtonSecondary.ButtonSecondary--highlighted Apply For Development
-
-        .Paragraph
-          button.ButtonSecondary.ButtonSecondary--highlighted Apply For Design
-    .Layout-defaultMargin
+.Panel.Panel--action.u-onlySmall
+  .u-defaultMargin
+  section.HorizontalGrid
+    .HorizontalGrid-cell
+      .Heading.Heading-light
+        .GridCell.GridCell--alignCenter
+          .GridCell-content
+            .u-defaultMargin
+              p Our apprenticeship program will dive you into a professional environment that’ll set you up for hiring.
+            .u-smallMargin
+              button.ButtonSecondary.ButtonSecondary--highlighted Apply For Development
+            .u-smallMargin
+              button.ButtonSecondary.ButtonSecondary--highlighted Apply For Design
+  .u-defaultMargin
 
 .Panel.Panel--alternative
-  .Layout
-    .Layout-defaultMargin
-    section.Container
-      .Container-column
-        h1.Heading Why take an apprenticeship with Subvisual?
+  .u-defaultMargin
+  section.HorizontalGrid
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          h1.Heading Why take an apprenticeship with Subvisual?
+          .u-smallMargin
 
-        p.Paragraph At  Subvisual you will work with the latest technologies in a relaxed but challenging environment, surrounded by  inspiring people, who want to help you grow.
+          p.Paragraph At  Subvisual you will work with the latest technologies in a relaxed but challenging environment, surrounded by  inspiring people, who want to help you grow.
 
-        p.Paragraph Over the years we have been placing ourself has a reference for education. We are founders of plenty meetups like Braga.RB, Braga.JS and Braga.UX. We run our own school, Creators School, where we teach about the web, from development to bussiness, and we have been invited to give classes at University of Minho  and Polytechnic Institute of Cavado and Ave. On top of this, we are proud to state that this program has been a success for everyone.
+          p.Paragraph Over the years we have been placing ourself has a reference for education. We are founders of plenty meetups like Braga.RB, Braga.JS and Braga.UX. We run our own school, Creators School, where we teach about the web, from development to bussiness, and we have been invited to give classes at University of Minho  and Polytechnic Institute of Cavado and Ave. On top of this, we are proud to state that this program has been a success for everyone.
 
-        p.Paragraph Want to know more about us and what we do?
+          p.Paragraph Want to know more about us and what we do?
 
-        .Paragraph
-          a.EngagementLink href="#" Learn more about our work
+          .Paragraph
+            a.EngagementLink href="#" Learn more about our work
 
-        .Paragraph
-          a.EngagementLink href="#" Learn more about our events
+          .Paragraph
+            a.EngagementLink href="#" Learn more about our events
 
 
-      .Container-column
-        h1.Heading Apprenticeship’s outcomes
+          .u-defaultMargin
 
-        p.Paragraph In our apprenticeship program you'll join our team and learn everything you need to know about the web. Our goal is to give you the tools to enter the market and level up your skills. You'll get the  feeling of the fast paced industry without the risk that it conveys.  This is an opportunity for you to grow, not being afraid of failing.
+          h1.Heading Apprenticeship’s outcomes
 
-        p.Paragraph After this ten week experience you'll be ready to be hired, either by us or one of our partners.
-    .Layout-defaultMargin
+          .u-smallMargin
+
+          p.Paragraph In our apprenticeship program you'll join our team and learn everything you need to know about the web. Our goal is to give you the tools to enter the market and level up your skills. You'll get the  feeling of the fast paced industry without the risk that it conveys.  This is an opportunity for you to grow, not being afraid of failing.
+
+          p.Paragraph After this ten week experience you'll be ready to be hired, either by us or one of our partners.
+  .u-defaultMargin
 
 .Panel
-  .Layout
-    .Grid
-      .Grid-cell
-        .Layout-defaultMargin
-        h1.Heading Development Apprenticeship
-        .Layout-defaultMargin
+  .HorizontalGrid
+    .HorizontalGrid-cell
+      .GridCell
+        .GridCell-content
+          .u-defaultMargin
+          h1.Heading Development Apprenticeship
+          .u-smallMargin
 
-        p.Paragraph A qualified candidate to the development apprenticeship is able to find her way around the web. She can easily edit HTML and CSS files, play around with JavaScript and is able to create a backend using a web framework.
+          p.Paragraph A qualified candidate to the development apprenticeship is able to find her way around the web. She can easily edit HTML and CSS files, play around with JavaScript and is able to create a backend using a web framework.
 
-        p.Paragraph Development apprentices will learn and work with Ruby on Rails, JavaScript, HTML5, Sass, Git, Unix, TDD and agile software development.
-        .Layout-defaultMargin
-        button.ButtonSecondary.ButtonSecondary--highlighted Apply For Development
-        .Layout-defaultMargin
+          p.Paragraph Development apprentices will learn and work with Ruby on Rails, JavaScript, HTML5, Sass, Git, Unix, TDD and agile software development.
+          .u-smallMargin
+          button.ButtonSecondary.ButtonSecondary--highlighted Apply For Development
 
-      .Grid-cell
-        .Panel.Panel--action
-          .Layout-defaultMargin
-          h1.Heading.Heading--uvp Design Apprenticeship
-          .Layout-defaultMargin
+    .HorizontalGrid-cell
+      .GridCell
+        .GridCell-content
+          .u-defaultMargin
+          h1.Heading Design Apprenticeship
+          .u-smallMargin
           p.Paragraph A qualified design apprentice will have experience with graphical design for the web or iOS/Android as well as HTML and CSS. Design apprentices will learn to work with a focus on User Experience, by designing for the other side of the screen.
 
           p.Paragraph We'll get them through our design process and give them experience with real projects, solving real problems.
-          .Layout-defaultMargin
-          div
-            button.ButtonSecondary.ButtonSecondary--highlighted Apply For Design
-          .Layout-defaultMargin
+          .u-smallMargin
+          button.ButtonSecondary.ButtonSecondary--highlighted Apply For Design
+  .u-defaultMargin
+
+= partial 'home/testimonies'
