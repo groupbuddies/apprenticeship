@@ -57,7 +57,6 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
     main role='main'
       = yield
 
-    footer
-      = link_to 'Sitemap', 'sitemap', class: 'Link'
+    = partial 'footer'
 
     = javascript_include_tag 'all'
