@@ -1,7 +1,58 @@
 ---
 title: Development - Apprenticeship Subvisual
 page: development
-nav_class: Nav--dark
 ---
 
-H2 Random
+.Panel.Panel--alternative
+  .u-navPlaceholder
+  header.HorizontalGrid
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .u-defaultMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            h1.Heading.Heading--brand.Heading--large
+              span.Heading-highlight> Development
+              span Apprenticeship
+
+          .u-defaultMargin
+
+          h1.Heading What is your experience with developing for the web?
+          .u-smallMargin
+
+          p.Paragraph Developers at Subvisual have a strong experience in building and shipping applications following a test-driven development process, with high-quality standards.
+
+          p.Paragraph Our Development Apprenticeship aims to set you up into working with those standards in mind and accepting nothing less.
+  .u-defaultMargin
+
+.HorizontalGrid
+  .HorizontalGrid-cell.u-panel
+    .GridCell
+      .GridCell-content
+        .u-defaultMargin
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          = image_tag 'beginner.png'
+        .u-smallMargin
+        h1.Heading Beginner
+        .u-smallMargin
+
+        p.Paragraph You don't have any experience in designing products or even websites, but you do want to follow that path and learn more about it. We can help you.
+        .u-smallMargin
+        = link_to "Learn More", "/development.html", class: "ButtonPrimary"
+        .u-defaultMargin
+
+  .HorizontalGrid-cell.u-panelAction
+    .GridCell
+      .GridCell-content
+        .u-defaultMargin
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          = image_tag 'intermediate.png'
+        .u-smallMargin
+        h1.Heading.Heading--uvp Intermediate
+        .u-smallMargin
+        .Text.Text--light
+          p.Paragraph You've got some programming skills. You understand the web and you even managed to get some of your own ideas up and running.
+          p.Paragraph You're ready to take the next step, to improve your skills as a developer, as a team member, in a professional environment.
+        .u-smallMargin
+        = link_to "Apply For Development", "/design.html", class: "ButtonPrimary"
+        .u-defaultMargin
