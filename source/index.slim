@@ -13,12 +13,13 @@ nav_class: Nav--dark
       .Heading.Heading-light
         .GridCell.GridCell--alignCenter
           .GridCell-content
-            .u-defaultMargin
-              p Our apprenticeship program will dive you into a professional environment that’ll set you up for hiring.
-            .u-smallMargin
-              button.ButtonSecondary.ButtonSecondary--highlighted Apply For Development
-            .u-smallMargin
-              button.ButtonSecondary.ButtonSecondary--highlighted Apply For Design
+            .ContentFormatter.ContentFormatter--centerHorizontally
+              .u-defaultMargin
+                p Our apprenticeship program will dive you into a professional environment that’ll set you up for hiring.
+              .u-smallMargin
+                button.ButtonSecondary.ButtonSecondary--highlighted Apply For Development
+              .u-smallMargin
+                button.ButtonSecondary.ButtonSecondary--highlighted Apply For Design
   .u-defaultMargin
 
 .Panel.Panel--alternative
@@ -54,32 +55,21 @@ nav_class: Nav--dark
           p.Paragraph After this ten week experience you'll be ready to be hired, either by us or one of our partners.
   .u-defaultMargin
 
-.HorizontalGrid
-  .HorizontalGrid-cell.u-panel
-    .GridCell
-      .GridCell-content
-        .u-defaultMargin
-        h1.Heading Development Apprenticeship
-        .u-smallMargin
-
-        p.Paragraph A qualified candidate to the development apprenticeship is able to find her way around the web. She can easily edit HTML and CSS files, play around with JavaScript and is able to create a backend using a web framework.
-
-        p.Paragraph Development apprentices will learn and work with Ruby on Rails, JavaScript, HTML5, Sass, Git, Unix, TDD and agile software development.
-        .u-smallMargin
-        button.ButtonSecondary.ButtonSecondary--highlighted Apply For Development
-        .u-defaultMargin
-
-  .HorizontalGrid-cell.u-panelAction
-    .GridCell
-      .GridCell-content
-        .u-defaultMargin
-        h1.Heading Design Apprenticeship
-        .u-smallMargin
-        p.Paragraph A qualified design apprentice will have experience with graphical design for the web or iOS/Android as well as HTML and CSS. Design apprentices will learn to work with a focus on User Experience, by designing for the other side of the screen.
-
-        p.Paragraph We'll get them through our design process and give them experience with real projects, solving real problems.
-        .u-smallMargin
-        button.ButtonSecondary.ButtonSecondary--highlighted Apply For Design
-        .u-defaultMargin
-
+= partial 'home/apply'
 = partial 'home/testimonies'
+
+.Panel.Panel--action.u-onlySmall
+  .u-defaultMargin
+  section.HorizontalGrid
+    .HorizontalGrid-cell
+      .Heading.Heading-light
+        .GridCell.GridCell--alignCenter
+          .GridCell-content
+            .ContentFormatter.ContentFormatter--centerHorizontally
+              .u-defaultMargin
+                p Ready to start your Apprenticeship?
+              .u-smallMargin
+                button.ButtonSecondary.ButtonSecondary--highlighted Apply For Development
+              .u-smallMargin
+                button.ButtonSecondary.ButtonSecondary--highlighted Apply For Design
+  .u-defaultMargin
