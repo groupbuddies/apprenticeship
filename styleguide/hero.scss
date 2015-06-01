@@ -1,3 +1,5 @@
+@import 'stylesheets/theme_vars';
+
 @mixin background-clouds($image-url: '', $container-width: 0px, $animation-duration: 100s, $top: 0) {
   &:before,
   &:after {
