@@ -47,6 +47,11 @@ end
 after_configuration do
   if Dir.exist? "blue"
     sprockets.append_path File.join "#{root}", "blue"
+
+    sprockets.import_asset File.join "images", "subvisual_logo_mono.svg"
+    sprockets.import_asset File.join "images", "subvisual_logo_mono_with_name.svg"
+    sprockets.import_asset File.join "images", "subvisual_logo_with_name.svg"
+    sprockets.import_asset File.join "images", "subvisual_separator.svg"
   end
 end
 
