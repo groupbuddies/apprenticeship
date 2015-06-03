@@ -17,3 +17,14 @@
 .u-panelAction {
   background-color: $Theme-color-horizon;
 }
+
+.Input {
+  width: 100%;
+  border: 2px solid $Theme-color-horizon;
+  padding: $Theme-spacing-xSmall;
+}
+
+.Input.Input--textarea {
+  resize: none;
+  height: 150px;
+}
