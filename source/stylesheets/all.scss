@@ -4,7 +4,8 @@
 @import 'stylesheets/components/base';
 @import 'stylesheets/utilities/base';
 
-@import 'hero';
+@import 'panel';
+@import 'heading';
 
 .Paragraph {
   margin-bottom: $Theme-spacing-xSmall;
