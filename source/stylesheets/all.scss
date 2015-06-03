@@ -7,6 +7,21 @@
 @import 'panel';
 @import 'heading';
 
+.Logo {
+  height: 90px;
+
+  @include media('<=tablet') {
+    height: 60px;
+  }
+}
+
+.u-mediaPlaceholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $Theme-color-polar;
+}
+
 .Paragraph {
   margin-bottom: $Theme-spacing-xSmall;
 }
