@@ -7,7 +7,7 @@
       .GridCell.GridCell--alignCenter
         .GridCell-content
           .ContentFormatter.ContentFormatter--centerHorizontally
-            img.Header-logo src="#{image_path 'logo.png'}"
+            = image_tag 'logo', class: 'Header-logo'
 
             h1.Heading.Heading--brand.Heading--large
               span> Our

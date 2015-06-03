@@ -70,9 +70,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  activate :imageoptim do |options|
-    options.pngout = false
-  end
 
   activate :relative_assets
   set :relative_links, true
