@@ -1,36 +1,35 @@
 .CollapsedBody {
-  position: relative;
-
   .CollapsedBody-header {
+    position: relative;
     padding-right: 1.5em;
     padding-bottom: $Theme-spacing-xSmall;
     border-bottom: 4px solid $Theme-color-polar;
   }
 
-  .CollapsedBody-header:after {
-    content: ' > ';
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .CollapsedBody-body {
-    display: none;
-  }
-
-  &.CollapsedBody--open {
+  @include media('<=tablet') {
     .CollapsedBody-body {
-      display: block;
+      display: none;
     }
 
     .CollapsedBody-header:after {
-      content: ' ^ ';
+      color: $Theme-color-yellowOrange;
+      content: '\f055';
+      font-family: FontAwesome;
+      position: absolute;
+      font-size: 25px;
+      top: 90%;
+      right: 0;
+      transform: translateY(-100%);
+    }
+    
+    &.CollapsedBody--open {
+      .CollapsedBody-body {
+        display: block;
+      }
+
+      .CollapsedBody-header:after {
+        content: '\f056';
+      }
     }
   }
-
-  &.CollapsedBody--disabled {
-  }
-}
-
-@include media('>=tablet') {
 }
