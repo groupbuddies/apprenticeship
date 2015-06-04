@@ -51,4 +51,19 @@
     @include background-clouds('clouds2.svg', 5088px, 400s, $Theme-nav-height);
     z-index: -1;
   }
+
+  .Panel-balloon {
+    z-index: -2;
+
+    position: absolute;
+    top: 50%;
+    right: 200px;
+
+    width: 180px;
+    height: 281px;
+
+    background-image: image-url('balloon.png');
+    background-size: contain;
+    background-repeat: repeat;
+  }
 }
