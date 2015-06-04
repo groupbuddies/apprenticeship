@@ -38,9 +38,19 @@
 }
 
 .Input {
-  width: 100%;
-  border: 2px solid $Theme-color-horizon;
+  @include font-properties(bodyText, base);
+
   padding: $Theme-spacing-xSmall;
+  border: 2px solid $Theme-color-white;
+
+  width: 100%;
+  color: $Theme-palette-text-body-default;
+
+  transition: all 1s linear;
+
+  &:focus {
+    border-color: $Theme-color-horizon;
+  }
 }
 
 .Input.Input--textarea {
