@@ -1,0 +1,36 @@
+.CollapsedBody {
+  position: relative;
+
+  .CollapsedBody-header {
+    padding-right: 1.5em;
+    padding-bottom: $Theme-spacing-xSmall;
+    border-bottom: 4px solid $Theme-color-polar;
+  }
+
+  .CollapsedBody-header:after {
+    content: ' > ';
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .CollapsedBody-body {
+    display: none;
+  }
+
+  &.CollapsedBody--open {
+    .CollapsedBody-body {
+      display: block;
+    }
+
+    .CollapsedBody-header:after {
+      content: ' ^ ';
+    }
+  }
+
+  &.CollapsedBody--disabled {
+  }
+}
+
+@include media('>=tablet') {
+}
