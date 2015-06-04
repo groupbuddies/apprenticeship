@@ -49,21 +49,41 @@
 
   .Panel-clouds2 {
     @include background-clouds('clouds2.svg', 5088px, 400s, $Theme-nav-height);
-    z-index: -1;
+    z-index: -3;
   }
 
   .Panel-balloon {
     z-index: -2;
 
     position: absolute;
-    top: 50%;
+    top: 60%;
     right: 200px;
 
     width: 180px;
-    height: 281px;
+    height: 180px;
 
     background-image: image-url('balloon.png');
-    background-size: contain;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+
+    transform-origin: 50% 18%;
+
+    animation-name:  balloon;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes balloon {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-25deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
   }
 }
