@@ -1,5 +1,5 @@
-.CollapsedBody {
-  .CollapsedBody-header {
+.CollapsedSection {
+  .CollapsedSection-header {
     position: relative;
     padding-right: 1.5em;
     padding-bottom: $Theme-spacing-xSmall;
@@ -7,11 +7,11 @@
   }
 
   @include media('<=tablet') {
-    .CollapsedBody-body {
+    .CollapsedSection-body {
       display: none;
     }
 
-    .CollapsedBody-header:after {
+    .CollapsedSection-header:after {
       color: $Theme-color-yellowOrange;
       content: '\f055';
       font-family: FontAwesome;
@@ -22,12 +22,12 @@
       transform: translateY(-100%);
     }
     
-    &.CollapsedBody--open {
-      .CollapsedBody-body {
+    &.CollapsedSection--open {
+      .CollapsedSection-body {
         display: block;
       }
 
-      .CollapsedBody-header:after {
+      .CollapsedSection-header:after {
         content: '\f056';
       }
     }
