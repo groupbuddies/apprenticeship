@@ -30,7 +30,7 @@
 }
 
 .Paragraph {
-  margin-bottom: $Theme-spacing-xSmall;
+  margin-bottom: $Theme-spacing-small;
 }
 
 .u-panel {
@@ -39,6 +39,14 @@
 
 .u-panelAction {
   background-color: $Theme-color-horizon;
+}
+
+.u-panelAlternative {
+  background-color: $Theme-color-white;
+}
+
+.u-italic {
+  font-style: italic;
 }
 
 .Input {
