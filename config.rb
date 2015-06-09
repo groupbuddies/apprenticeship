@@ -52,6 +52,8 @@ after_configuration do
     sprockets.import_asset File.join "images", "subvisual_logo_mono_with_name.svg"
     sprockets.import_asset File.join "images", "subvisual_logo_with_name.svg"
     sprockets.import_asset File.join "images", "subvisual_separator.svg"
+    sprockets.import_asset File.join "images", "subvisual_logo_no_name.svg"
+    sprockets.import_asset File.join "images", "subvisual_logo_mono_no_name.svg"
   end
 end
 

@@ -2,13 +2,10 @@
 
 @import 'font-awesome-compass';
 @import 'font-awesome';
-
+@import 'variables';
 @import 'stylesheets/theme_vars';
-@import 'stylesheets/components/base';
-@import 'stylesheets/utilities/base';
-
-@import 'panel';
-@import 'collapsed_section';
+@import 'stylesheets/index';
+@import 'components/base';
 
 .Logo {
   height: 90px;

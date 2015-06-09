@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/groupbuddies/apprenticeship",
   "devDependencies": {
-    "sc5-styleguide": "^0.3.16"
+    "sc5-styleguide": "^0.3.19"
   }
 }
