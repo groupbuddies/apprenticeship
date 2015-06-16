@@ -1,6 +1,6 @@
 //= require velocity
 //= require jquery
-//= require javascripts
+//= require blue
 
 //= require faq
 //= require collapsed_section

@@ -1,10 +1,23 @@
+.NavOverlay
+  = nav_overlay_item('Work', 'http://subvisual.co/work')
+  = nav_overlay_item('Company', 'http://subvisual.co/company')
+  = nav_overlay_item('Community', 'http://subvisual.co/community')
+  = nav_overlay_item('Apprenticeship', '/', 'apprenticeship')
+  = nav_overlay_item('Blog', 'https://blog.subvisual.co/', 'blog')
+
 nav#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}" aria-label=('Main navigation')
   = link_to '/', class: 'Nav-logo'
     .NavLogo class="#{'NavLogo--mono' if current_page.data.nav_class == 'Nav--light'}"
+
+  .Nav-menu
+    .Burger
+      span.Burger-line
+      span.Burger-line
+      span.Burger-line
+
   ul.Nav-items
-    li.Nav-item
-    = nav_item('Work', 'http://groupbuddies.com/work')
-    = nav_item('Company', 'http://groupbuddies.com/company')
-    = nav_item('Community', 'http://groupbuddies.com/community')
+    = nav_item('Work', 'http://subvisual.co/work')
+    = nav_item('Company', 'http://subvisual.co/company')
+    = nav_item('Community', 'http://subvisual.co/community')
     = nav_item('Apprenticeship', '/', 'apprenticeship')
-    = nav_item('Blog', 'https://blog.groupbuddies.com/', 'blog')
+    = nav_item('Blog', 'https://blog.subvisual.co/', 'blog')
