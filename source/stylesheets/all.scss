@@ -26,6 +26,14 @@
   visibility: hidden;
 }
 
+@include media('<=tablet') {
+  .u-centerOnMobile {
+    justify-content: center;
+
+    text-align: center;
+  }
+}
+
 .Paragraph {
   margin-bottom: $Theme-spacing-small;
 }
