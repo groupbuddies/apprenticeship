@@ -1,4 +1,4 @@
-.u-largeMargin
+.u-defaultThenLargeMargin
 .HorizontalGrid
   .HorizontalGrid-cell
     .GridCell.GridCell--alignCenter
@@ -6,8 +6,9 @@
         .ContentFormatter.ContentFormatter--centerHorizontally
           object data="#{image_path('subvisual_separator.svg')}" type="image/svg+xml"
 
-.u-largeMargin
-.HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
+.u-defaultThenLargeMargin
+
+.HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-exceptSmall
   .HorizontalGrid-cell
     .SitemapTopic
       h1.SitemapTopic-heading
@@ -43,7 +44,8 @@
       li Rebrading
       li The Shelf
       li OncoStats
-.u-largeMargin
+  .u-largeMargin
+
 .Footer
   .Footer-credits
     span.Footer-handcrafted Handcrafted by
