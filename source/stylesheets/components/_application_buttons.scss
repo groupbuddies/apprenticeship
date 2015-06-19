@@ -1,0 +1,14 @@
+.ApplicationButtons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include media('>tablet') {
+  .ApplicationButtons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
