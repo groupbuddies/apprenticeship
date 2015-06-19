@@ -15,10 +15,7 @@ nav_class: Nav--dark
             .ContentFormatter.ContentFormatter--centerHorizontally
               p Our apprenticeship program will dive you into a professional environment that’ll set you up for hiring.
               .u-smallMargin
-              .ApplicationButtons
-                = link_to "Apply For Development", "development", class: "ButtonSecondary ButtonSecondary--highlighted ButtonSecondary--fixedWidth"
-                .u-smallMargin
-                = link_to "Apply For Design", "design", class: "ButtonSecondary ButtonSecondary--highlighted ButtonSecondary--fixedWidth"
+              = partial 'application_buttons'
   .u-defaultMargin
 
 = partial 'home/reasons'
@@ -27,7 +24,7 @@ nav_class: Nav--dark
 = partial 'home/related_posts'
 = partial 'home/faq'
 
-.Panel.Panel--action.u-onlySmall
+.Panel.Panel--action
   .u-defaultThenLargeMargin
   section.HorizontalGrid
     .HorizontalGrid-cell
@@ -37,7 +34,5 @@ nav_class: Nav--dark
             .ContentFormatter.ContentFormatter--centerHorizontally
               p Ready to start your Apprenticeship?
               .u-smallMargin
-              = link_to "Apply For Development", "development", class: "ButtonSecondary ButtonSecondary--highlighted"
-              .u-smallMargin
-              = link_to "Apply For Design", "design", class: "ButtonSecondary ButtonSecondary--highlighted"
+              = partial 'application_buttons'
   .u-defaultThenLargeMargin
