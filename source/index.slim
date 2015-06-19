@@ -5,7 +5,7 @@ nav_class: Nav--dark
 ---
 = partial 'home/hero'
 
-.Panel.Panel--action.u-onlySmall
+.Panel.Panel--action
   .u-defaultMargin
   section.HorizontalGrid
     .HorizontalGrid-cell
@@ -15,9 +15,10 @@ nav_class: Nav--dark
             .ContentFormatter.ContentFormatter--centerHorizontally
               p Our apprenticeship program will dive you into a professional environment that’ll set you up for hiring.
               .u-smallMargin
-              = link_to "Apply For Development", "development", class: "ButtonSecondary ButtonSecondary--highlighted"
-              .u-smallMargin
-              = link_to "Apply For Design", "design", class: "ButtonSecondary ButtonSecondary--highlighted"
+              .ApplicationButtons
+                = link_to "Apply For Development", "development", class: "ButtonSecondary ButtonSecondary--highlighted ButtonSecondary--fixedWidth"
+                .u-smallMargin
+                = link_to "Apply For Design", "design", class: "ButtonSecondary ButtonSecondary--highlighted ButtonSecondary--fixedWidth"
   .u-defaultMargin
 
 = partial 'home/reasons'
