@@ -44,8 +44,13 @@
   font-style: italic;
 }
 
-.ButtonSecondary.ButtonSecondary--fixedWidth {
-  width: 280px;
+.ButtonSecondary.ButtonSecondary--fixedWidth,
+.ButtonPrimary.ButtonPrimary--fixedWidth {
+  width: 200px;
+
+  @include media('>tablet') {
+    width: 250px;
+  }
 }
 
 .Input {
