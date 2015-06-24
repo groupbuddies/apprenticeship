@@ -28,6 +28,27 @@
   visibility: hidden;
 }
 
+.u-beginnerBallooon {
+  display: inline-block;
+
+  width: 135px;
+  height: 200px;
+
+  background-image: image-url('level_balloons.png');
+  background-repeat: no-repeat;
+}
+
+.u-intermediateBalloon {
+  display: inline-block;
+
+  width: 194px;
+  height: 200px;
+
+  background-image: image-url('level_balloons.png');
+  background-repeat: no-repeat;
+  background-position: -135px;
+}
+
 @include media('<=tablet') {
   .u-centerOnMobile {
     justify-content: center;
