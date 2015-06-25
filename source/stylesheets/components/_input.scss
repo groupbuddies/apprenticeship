@@ -34,6 +34,10 @@ $DecoratedForm-border: 2px solid $Theme-color-polar;
   border-bottom: $DecoratedForm-border;
 }
 
+.FormGrid-cell {
+  width: 100%;
+}
+
 .FormGrid-cell:not(:last-child) {
   border-right: $DecoratedForm-border;
 }
@@ -61,5 +65,16 @@ $DecoratedForm-border: 2px solid $Theme-color-polar;
     color: $Theme-palette-text-body-default;
 
     transition: all 1s linear;
+  }
+
+  .InputGroup-textarea {
+    @include font-properties(bodyText, base);
+
+    width: 100%;
+    height: 6em;
+
+    border: none;
+
+    resize: none;
   }
 }
