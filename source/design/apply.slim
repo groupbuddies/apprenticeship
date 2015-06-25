@@ -16,57 +16,60 @@ page: design
               span Apprenticeship
   .u-defaultMargin
 
-.Panel
-  .HorizontalGrid
-    .HorizontalGrid-cell
-      .GridCell.GridCell--alignCenter
-        form.GridCell-content(
+.HorizontalGrid
+  .HorizontalGrid-cell
+    .GridCell.GridCell--alignCenter
+      .GridCell-content
+        p To apply please take the time to fill in this form. Try to answer every question. We will get back to you.
+        br
+
+        .u-smallThenDefaultMargin
+
+        form(
           accept-charset="UTF-8"
           action="https://formkeep.com/f/106a41780671"
           method="POST"
         )
-          .u-defaultThenLargeMargin
+          .FormGrid
+            .FormGrid-row
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label First & Last Name
+                  input.InputGroup-input type="text" name="Name" placeholder="John Snow" required=""
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label Phone Number
+                  input.InputGroup-input type="number" name="Phone" placeholder="999 999 999" required=""
 
-          p To apply please take the time to fill in this form. Try to answer every question. We will get back to you.
-          br
 
-          h2.Heading Name
-          .u-xSmallThenSmallMargin
-          input.Input type="text" name="Name" placeholder="John Snow" required=""
+            .FormGrid-row
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label Your email
+                  input.InputGroup-input type="email" name="Email" placeholder="johnsnow@subvisual.co" required=""
 
-          .u-smallThenDefaultMargin
+        .u-defaultThenLargeMargin
 
-          h2.Heading Email
-          .u-xSmallThenSmallMargin
-          input.Input type="email" name="Email" placeholder="johnsnow@subvisual.co" required=""
+        .FormGrid
+          .FormGrid-row
+            .FormGrid-cell
+              .InputGroup
+                h2.InputGroup-label Why do you love desing?
+                textarea.InputGroup-input required=""
 
-          .u-smallThenDefaultMargin
+          .FormGrid-row
+            .FormGrid-cell
+              .InputGroup
+                h2.InputGroup-label How do you want to grow as a designer?
+                textarea.InputGroup-input required=""
 
-          h2.Heading Phone Number
-          .u-xSmallThenSmallMargin
-          input.Input type="number" name="Phone" placeholder="999 999 999" required=""
+          .FormGrid-row
+            .FormGrid-cell
+              .InputGroup
+                h2.InputGroup-label Why do you think the apprenticeship is right for you?
+                textarea.InputGroup-input required=""
 
-          .u-smallThenDefaultMargin
-
-          h2.Heading When are you available to start?
-          .u-xSmallThenSmallMargin
-          textarea.Input.Input--textarea required=""
-
-          .u-smallThenDefaultMargin
-
-          h2.Heading What accomplishments/projects are most proud of? Provide links if you can (your personal website, behance, dribble, etc).
-          .u-xSmallThenSmallMargin
-          textarea.Input.Input--textarea required=""
-
-          .u-smallThenDefaultMargin
-
-          h2.Heading What do you expect from this program? What do you expect after it?
-          .u-xSmallThenSmallMargin
-          textarea.Input.Input--textarea required=""
-
-          .u-smallThenDefaultMargin
-
-          .ContentFormatter.ContentFormatter--right
-            button.ButtonPrimary Send
-
-          .u-defaultThenLargeMargin
+        .u-smallThenDefaultMargin
+        .ContentFormatter.ContentFormatter--center
+          button.ButtonPrimary Send
+        .u-defaultThenLargeMargin

@@ -18,3 +18,48 @@
   resize: none;
   height: 150px;
 }
+
+
+$DecoratedForm-border: 2px solid $Theme-color-polar;
+
+.FormGrid {
+  border-top: $DecoratedForm-border;
+  border-left: $DecoratedForm-border;
+  border-right: $DecoratedForm-border;
+}
+
+.FormGrid-row {
+  display: flex;
+
+  border-bottom: $DecoratedForm-border;
+}
+
+.FormGrid-cell:not(:last-child) {
+  border-right: $DecoratedForm-border;
+}
+
+.InputGroup {
+  width: 100%;
+
+  padding: $Theme-spacing-xSmall;
+
+  .InputGroup-label {
+    @include font-properties(subvisual, small);
+
+    margin-bottom: $Theme-spacing-xSmall;
+
+    text-transform: uppercase;
+  }
+
+  .InputGroup-input {
+    @include font-properties(bodyText, base);
+
+    width: 100%;
+
+    border: none;
+
+    color: $Theme-palette-text-body-default;
+
+    transition: all 1s linear;
+  }
+}
