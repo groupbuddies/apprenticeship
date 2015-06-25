@@ -28,57 +28,60 @@
   }
 }
 
-@keyframes clouds-animation {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 .Panel.Panel--clouds {
   overflow: hidden;
   position: relative;
   z-index: 0;
+}
 
+.Panel-clouds1 {
+  @include background-clouds('clouds1.svg', 5444px, 800s, $Theme-nav-height-mobile);
+  z-index: -1;
+}
+
+.Panel-clouds2 {
+  @include background-clouds('clouds2.svg', 5088px, 400s, $Theme-nav-height-mobile);
+  z-index: -2;
+}
+
+.Panel-balloonWrapper {
+  z-index: -3;
+
+  position: absolute;
+
+  bottom: $Theme-spacing-default;
+  right: $Theme-spacing-small;
+
+  width: 180px;
+  height: 180px;
+}
+
+.Panel-balloon {
+  width: 100%;
+  height: 100%;
+
+  background-image: image-url('balloon.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+
+  transform-origin: 50% 18%;
+
+  animation-name:  balloon;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@include media('>tablet') {
   .Panel-clouds1 {
-    @include background-clouds('clouds1.svg', 5444px, 800s, $Theme-nav-height);
+    @include background-clouds('clouds1.svg', 5444px, 800s, $Theme-nav-height-desktop);
     z-index: -1;
   }
 
   .Panel-clouds2 {
-    @include background-clouds('clouds2.svg', 5088px, 400s, $Theme-nav-height);
+    @include background-clouds('clouds2.svg', 5088px, 400s, $Theme-nav-height-desktop);
     z-index: -2;
-  }
-
-  .Panel-balloonWrapper {
-    z-index: -3;
-
-    position: absolute;
-
-    bottom: $Theme-spacing-default;
-    right: $Theme-spacing-small;
-
-    width: 180px;
-    height: 180px;
-  }
-
-  .Panel-balloon {
-    width: 100%;
-    height: 100%;
-
-    background-image: image-url('balloon.png');
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: center;
-
-    transform-origin: 50% 18%;
-
-    animation-name:  balloon;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
   }
 }
 
@@ -91,5 +94,14 @@
   }
   100% {
     transform: rotateZ(0deg);
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }

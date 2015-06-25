@@ -28,27 +28,6 @@
   visibility: hidden;
 }
 
-.u-beginnerBallooon {
-  display: inline-block;
-
-  width: 135px;
-  height: 200px;
-
-  background-image: image-url('level_balloons.png');
-  background-repeat: no-repeat;
-}
-
-.u-intermediateBalloon {
-  display: inline-block;
-
-  width: 194px;
-  height: 200px;
-
-  background-image: image-url('level_balloons.png');
-  background-repeat: no-repeat;
-  background-position: -135px;
-}
-
 @include media('<=tablet') {
   .u-centerOnMobile {
     justify-content: center;
@@ -63,34 +42,4 @@
 
 .u-italic {
   font-style: italic;
-}
-
-.ButtonSecondary.ButtonSecondary--fixedWidth,
-.ButtonPrimary.ButtonPrimary--fixedWidth {
-  width: 200px;
-
-  @include media('>tablet') {
-    width: 280px;
-  }
-}
-
-.Input {
-  @include font-properties(bodyText, base);
-
-  padding: $Theme-spacing-xSmall;
-  border: 2px solid $Theme-color-white;
-
-  width: 100%;
-  color: $Theme-palette-text-body-default;
-
-  transition: all 1s linear;
-
-  &:focus {
-    border-color: $Theme-color-horizon;
-  }
-}
-
-.Input.Input--textarea {
-  resize: none;
-  height: 150px;
 }

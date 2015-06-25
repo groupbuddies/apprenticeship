@@ -2,6 +2,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+Slim::Engine.disable_option_validator!
+
 require 'font-awesome-sass'
 
 # Per-page layout changes:
