@@ -16,57 +16,59 @@ page: development_apply
               span Apprenticeship
   .u-defaultMargin
 
-.Panel
-  .HorizontalGrid
-    .HorizontalGrid-cell
-      .GridCell.GridCell--alignCenter
-        form.GridCell-content(
+.HorizontalGrid
+  .HorizontalGrid-cell
+    .GridCell.GridCell--alignCenter
+      .GridCell-content
+        .u-smallThenDefaultMargin
+
+        p To apply please take the time to fill in this form. Try to answer every question. We will get back to you.
+
+        .u-smallThenDefaultMargin
+
+        form(
           accept-charset="UTF-8"
           action="https://formkeep.com/f/106a41780671"
           method="POST"
         )
+          .FormGrid
+            .FormGrid-row
+              .FormGrid-cell--grow2
+                .InputGroup
+                  h2.InputGroup-label Name
+                  input.InputGroup-input type="text" name="Name" placeholder="John Snow" required=""
+              .FormGrid-cell--grow1
+                .InputGroup
+                  h2.InputGroup-label Phone Number
+                  input.InputGroup-input type="number" name="Phone" placeholder="999 999 999" required=""
+
+            .FormGrid-row
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label Email
+                  input.InputGroup-input type="email" name="Email" placeholder="johnsnow@subvisual.co" required=""
+                    
           .u-defaultThenLargeMargin
 
-          p To apply please take the time to fill in this form. Try to answer every question. We will get back to you.
-          br
+          .FormGrid
+            .FormGrid-row
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label When are you available to start?
+                  textarea.InputGroup-textarea required=""
+            .FormGrid-row
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label What accomplishments/projects are most proud of? Provide links if you can.
+                  textarea.InputGroup-textarea required=""
 
-          h2.Heading Name
-          .u-xSmallThenSmallMargin
-          input.Input type="text" name="Name" placeholder="John Snow" required=""
-
-          .u-smallThenDefaultMargin
-
-          h2.Heading Email
-          .u-xSmallThenSmallMargin
-          input.Input type="email" name="Email" placeholder="johnsnow@subvisual.co" required=""
-
-          .u-smallThenDefaultMargin
-
-          h2.Heading Phone Number
-          .u-xSmallThenSmallMargin
-          input.Input type="number" name="Phone" placeholder="999 999 999" required=""
-
-          .u-smallThenDefaultMargin
-
-          h2.Heading When are you available to start?
-          .u-xSmallThenSmallMargin
-          textarea.Input.Input--textarea required=""
+            .FormGrid-row
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label What do you expect from this program? What do you expect after it?
+                  textarea.InputGroup-textarea required=""
 
           .u-smallThenDefaultMargin
-
-          h2.Heading What accomplishments/projects are most proud of? Provide links if you can.
-          .u-xSmallThenSmallMargin
-          textarea.Input.Input--textarea required=""
-
-          .u-smallThenDefaultMargin
-
-          h2.Heading What do you expect from this program? What do you expect after it?
-          .u-xSmallThenSmallMargin
-          textarea.Input.Input--textarea required=""
-
-          .u-smallThenDefaultMargin
-
           .ContentFormatter.ContentFormatter--right
             button.ButtonPrimary Send
-
-          .u-defaultThenLargeMargin
+          .u-smallThenDefaultMargin
