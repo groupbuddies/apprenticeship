@@ -1,0 +1,78 @@
+$InputGroup-icon-plus-size: 25px;
+
+.InputGroup {
+  position: relative;
+
+  width: 100%;
+
+  padding: $Theme-spacing-xSmall;
+}
+
+.InputGroup-label {
+  @include font-properties(subvisual, small);
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  text-transform: uppercase;
+}
+
+.InputGroup-input {
+  @include font-properties(bodyText, base);
+
+  width: 100%;
+
+  border: none;
+
+  color: $Theme-palette-text-body-default;
+
+  transition: all 1s linear;
+}
+
+.InputGroup-textarea {
+  @include font-properties(bodyText, base);
+
+  width: 100%;
+  height: 6em;
+
+  border: none;
+
+  color: $Theme-palette-text-body-default;
+
+  resize: none;
+}
+
+.InputGroup-item {
+  @include font-properties(bodyText, base);
+
+  color: $Theme-color-limedSpruce;
+}
+
+.InputGroup-iconPlus {
+  display: none;
+
+    position: absolute;
+    top: 50%;
+    right: $Theme-spacing-xSmall;
+
+    width: $InputGroup-icon-plus-size;
+    height: $InputGroup-icon-plus-size;
+
+    border-radius: 50%;
+
+    background-color: $Theme-color-yellowOrange;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    line-height: $InputGroup-icon-plus-size;
+
+    transform: translateY(-50%);
+}
+
+.InputGroup.InputGroup--icon {
+  padding-right: $InputGroup-icon-plus-size + $Theme-spacing-default;
+ 
+  .InputGroup-iconPlus {
+    display: block;
+  }
+}

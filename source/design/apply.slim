@@ -39,12 +39,17 @@ page: design
                   h2.InputGroup-label Phone Number
                   input.InputGroup-input type="number" name="Phone" placeholder="999 999 999" required=""
 
-
             .FormGrid-row
               .FormGrid-cell
                 .InputGroup
                   h2.InputGroup-label Your email
                   input.InputGroup-input type="email" name="Email" placeholder="johnsnow@subvisual.co" required=""
+            .FormGrid-row#js-links-hook
+              .FormGrid-cell
+                .InputGroup.InputGroup--icon
+                  input.InputGroup-input type="text" name="Link_0" placeholder="http://github.com/groupbuddies"
+                  a.InputGroup-iconPlus href="#"
+                    | &times
 
         .u-defaultThenLargeMargin
 

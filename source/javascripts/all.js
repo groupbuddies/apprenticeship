@@ -4,6 +4,7 @@
 
 //= require faq
 //= require collapsed_section
+//= require links
 
 $(function() {
   var el = $('.Panel-balloonWrapper');
