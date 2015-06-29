@@ -47,19 +47,18 @@ after_configuration do
 end
 
 after_configuration do
-  if Dir.exist? 'blue'
-    sprockets.append_path File.join '#{root}', 'blue', 'javascripts'
-    sprockets.append_path File.join '#{root}', 'blue', 'stylesheets'
-    sprockets.append_path File.join '#{root}', 'blue', 'images', 'blue'
-
-    sprockets.import_asset 'link-arrow.svg'
-    sprockets.import_asset 'subvisual_logo_mono.svg'
-    sprockets.import_asset 'subvisual_logo_mono_no_name.svg'
-    sprockets.import_asset 'subvisual_logo_mono_with_name.svg'
-    sprockets.import_asset 'subvisual_logo_no_name.svg'
-    sprockets.import_asset 'subvisual_logo_with_name.svg'
-    sprockets.import_asset 'subvisual_separator.svg'
+  %w(javascripts stylesheets images).each do |dir|
+    sprockets.append_path File.join "#{root}", "blue/#{dir}"
   end
+
+  sprockets.import_asset "blue/subvisual_logo_mono.svg"
+  sprockets.import_asset "blue/subvisual_logo_mono_no_name.svg"
+  sprockets.import_asset "blue/subvisual_logo_mono_with_name.svg"
+  sprockets.import_asset "blue/subvisual_logo_no_name.svg"
+  sprockets.import_asset "blue/subvisual_logo_with_name.svg"
+  sprockets.import_asset "blue/subvisual_separator.svg"
+  sprockets.import_asset "blue/link-arrow.svg"
+  sprockets.import_asset "blue/link-arrow-white.svg"
 end
 
 set :css_dir, 'stylesheets'
