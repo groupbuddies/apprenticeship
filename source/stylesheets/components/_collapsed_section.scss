@@ -3,7 +3,7 @@
     position: relative;
     padding-right: 1.5em;
     padding-bottom: $Theme-spacing-xSmall;
-    border-bottom: 4px solid $Theme-color-polar;
+    border-bottom: 1px solid $Theme-color-polar;
   }
 
   @include media('<=tablet') {
