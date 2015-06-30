@@ -20,3 +20,34 @@
   background-position: -135px;
   background-size: auto 100%;
 }
+
+@mixin apprentice-pictures($position) {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  background-image: image-url('apprentices@2x.png');
+  background-position: #{- $position * 60px};
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  @include media('>tablet') {
+    width: 100px;
+    height: 100px;
+
+    background-position: #{- $position * 100px};
+  }
+}
+
+.u-marioPicture {
+  @include apprentice-pictures(0);
+}
+
+.u-justoPicture {
+  @include apprentice-pictures(1);
+}
+
+.u-bailaPicture {
+  @include apprentice-pictures(2);
+}
