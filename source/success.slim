@@ -2,18 +2,25 @@
 title: Success - Apprenticeship Subvisual
 page: development
 ---
+.Panel
+  .u-largeThenDoubleLargeMargin
+  .ContentFormatter.ContentFormatter--centerHorizontally
+    h1.Heading.Heading--brandLarge
+      ' Application
+      span.Heading-highlight> Received
+  .u-largeThenDoubleLargeMargin
 
-.Panel.Panel--alternative
-  .u-navPlaceholder
-  header.HorizontalGrid
-    .HorizontalGrid-cell
-      .GridCell.GridCell--alignCenter
-        .GridCell-content
-          .u-defaultMargin
-          .ContentFormatter.ContentFormatter--centerHorizontally
-            h1.Heading Application successfully submitted
+.SeparatorImage
+  .SeparatorImage-image
+    = partial 'letter.svg'
+.u-largeThenDoubleLargeMargin
 
-            .u-smallThenDefaultMargin
-
-            p You application has been submited with success.
-  .u-defaultMargin
+.GridCell.GridCell--alignCenter
+  .GridCell-content
+    .ContentFormatter.ContentFormatter--centerHorizontally
+      .u-smallThenNonMargin
+        .Text.Text--large.Text--dark
+          p Your application was received with success.
+          p We will be in touch.
+      .u-smallThenDefaultMargin
+      = link_to 'Back to homepage', 'https://subvisual.co/apprenticeship', class: 'ButtonPrimary'
