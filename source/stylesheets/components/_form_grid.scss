@@ -1,19 +1,39 @@
 $FormGrid-border: 2px solid $Theme-color-polar;
 
-.FormGrid {
+.FormGrid-row {
   border-top: $FormGrid-border;
   border-left: $FormGrid-border;
   border-right: $FormGrid-border;
 }
 
+.FormGrid-row.FormGrid--noBorder {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
 .FormGrid-row {
   display: flex;
 
+  @include media('<tablet') {
+    flex-direction: column;
+  }
+}
+
+.FormGrid-row.FormGrid-lastRow {
   border-bottom: $FormGrid-border;
 }
 
+
+
 .FormGrid-cell {
   width: 100%;
+
+  @include media('<tablet') {
+    &:not(:last-child) {
+      border-bottom: $FormGrid-border;
+    }
+  }
 }
 
 [class^="FormGrid-cell"]:not(:last-child) {

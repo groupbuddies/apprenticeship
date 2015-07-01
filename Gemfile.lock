@@ -201,3 +201,6 @@ DEPENDENCIES
   rake
   scss_lint
   slim
+
+BUNDLED WITH
+   1.10.3

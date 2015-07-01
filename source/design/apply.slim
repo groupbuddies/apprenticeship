@@ -30,11 +30,11 @@ page: design
         )
           .FormGrid
             .FormGrid-row
-              .FormGrid-cell--grow2
+              .FormGrid-cell.FormGrid-cell--grow2
                 .InputGroup
                   h2.InputGroup-label First & Last Name
                   input.InputGroup-input type="text" name="Name" placeholder="John Snow" required=""
-              .FormGrid-cell--grow1
+              .FormGrid-cell.FormGrid-cell--grow1
                 .InputGroup
                   h2.InputGroup-label Phone Number
                   input.InputGroup-input type="number" name="Phone" placeholder="999 999 999" required=""
@@ -44,35 +44,34 @@ page: design
                 .InputGroup
                   h2.InputGroup-label Your email
                   input.InputGroup-input type="email" name="Email" placeholder="johnsnow@subvisual.co" required=""
-            .FormGrid-row#js-links-hook
+            .FormGrid-row.FormGrid-lastRow#js-links-hook
               .FormGrid-cell
                 .InputGroup.InputGroup--icon
+                  h2.InputGroup-label Drop links for your work (portfolio, etc)
                   input.InputGroup-input type="text" name="Link_0" placeholder="http://github.com/groupbuddies"
-                  a.InputGroup-iconPlus href="#"
-                    | &times
 
-        .u-defaultThenLargeMargin
+            .FormGrid-row.FormGrid--noBorder
+              .u-defaultThenLargeMargin
 
-        .FormGrid
-          .FormGrid-row
-            .FormGrid-cell
-              .InputGroup
-                h2.InputGroup-label Why do you love desing?
-                textarea.InputGroup-textarea required=""
+            .FormGrid-row
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label Why do you love design?
+                  textarea.InputGroup-textarea required=""
 
-          .FormGrid-row
-            .FormGrid-cell
-              .InputGroup
-                h2.InputGroup-label How do you want to grow as a designer?
-                textarea.InputGroup-textarea required=""
+            .FormGrid-row
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label How do you want to grow as a designer?
+                  textarea.InputGroup-textarea required=""
 
-          .FormGrid-row
-            .FormGrid-cell
-              .InputGroup
-                h2.InputGroup-label Why do you think the apprenticeship is right for you?
-                textarea.InputGroup-textarea required=""
+            .FormGrid-row.FormGrid-lastRow
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label Why do you think the apprenticeship is right for you?
+                  textarea.InputGroup-textarea required=""
 
-        .u-smallThenDefaultMargin
-        .ContentFormatter.ContentFormatter--center
-          button.ButtonPrimary Send
-        .u-smallThenDefaultMargin
+          .u-smallThenDefaultMargin
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+            input.ButtonPrimary type="submit" value="Send"
+          .u-smallThenDefaultMargin
