@@ -41,9 +41,9 @@ $FormGrid-border: 2px solid $Theme-color-polar;
 }
 
 .FormGrid-cell--grow2 {
-  flex: 2;
+  flex: 2 0 0%;
 }
 
 .FormGrid-cell--grow1 {
-  flex: 1;
+  flex: 1 0 0%;
 }
