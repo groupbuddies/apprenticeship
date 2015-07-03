@@ -1,5 +1,5 @@
 set :application, 'apprenticeship.subvisual.co'
-set :repo_url, 'git@github.com:groupbuddies/apprenticeship.git'
+set :repo_url, 'git@github.com:groupbuddies/apprenticeship.github.io.git'
 set :stage, :production
 set :branch, (ENV['DEPLOY_BRANCH'] || :master)
 
