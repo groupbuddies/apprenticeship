@@ -10,9 +10,11 @@ $InputGroup-icon-plus-size: 25px;
 
 .InputGroup-label {
   @include font-properties(subvisual, small);
+  display: block;
 
   margin-bottom: $Theme-spacing-xSmall;
 
+  font-weight: $Theme-typography-fontWeight-bold;
   text-transform: uppercase;
 }
 
@@ -21,7 +23,7 @@ $InputGroup-icon-plus-size: 25px;
 
   width: 100%;
 
-  border: none;
+  border: 0;
 
   color: $Theme-palette-text-body-default;
 
@@ -34,11 +36,11 @@ $InputGroup-icon-plus-size: 25px;
   width: 100%;
   height: 6em;
 
-  border: none;
+  resize: none;
+
+  border: 0;
 
   color: $Theme-palette-text-body-default;
-
-  resize: none;
 }
 
 .InputGroup-item {
@@ -48,30 +50,30 @@ $InputGroup-icon-plus-size: 25px;
 }
 
 .InputGroup-iconPlus {
+  position: absolute;
+  top: 50%;
+  right: $Theme-spacing-xSmall;
+
   display: none;
 
-    position: absolute;
-    top: 50%;
-    right: $Theme-spacing-xSmall;
+  width: $InputGroup-icon-plus-size;
+  height: $InputGroup-icon-plus-size;
 
-    width: $InputGroup-icon-plus-size;
-    height: $InputGroup-icon-plus-size;
+  background-color: $Theme-color-yellowOrange;
+  border-radius: 50%;
 
-    border-radius: 50%;
+  color: $Theme-color-white;
 
-    background-color: $Theme-color-yellowOrange;
+  line-height: $InputGroup-icon-plus-size;
+  text-align: center;
+  text-decoration: none;
 
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    line-height: $InputGroup-icon-plus-size;
-
-    transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .InputGroup.InputGroup--icon {
   padding-right: $InputGroup-icon-plus-size + $Theme-spacing-default;
- 
+
   .InputGroup-iconPlus {
     display: block;
   }

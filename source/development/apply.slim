@@ -35,24 +35,24 @@ page: development_apply
             .FormGrid-row
               .FormGrid-cell.FormGrid-cell--grow2
                 .InputGroup
-                  h2.InputGroup-label First & Last Name
-                  input.InputGroup-input type="text" name="name" placeholder="John Snow" required=""
+                  label.InputGroup-label for="name" First & Last Name
+                  input.InputGroup-input type="text" id="name" name="name" placeholder="John Developer" required=""
               .FormGrid-cell.FormGrid-cell--grow1
                 .InputGroup
-                  h2.InputGroup-label Phone Number
-                  input.InputGroup-input type="tel" name="phone" placeholder="999 999 999" required=""
+                  label.InputGroup-label for="phone" Phone Number
+                  input.InputGroup-input type="tel" id="phone" name="phone" placeholder="999 999 999" required=""
 
             .FormGrid-row
               .FormGrid-cell
                 .InputGroup
-                  h2.InputGroup-label Your email
-                  input.InputGroup-input type="email" name="email" placeholder="developer@subvisual.co" required=""
+                  label.InputGroup-label for="email" Your email
+                  input.InputGroup-input type="email" id="email" name="email" placeholder="developer@subvisual.co" required=""
 
             .FormGrid-row.FormGrid-lastRow#js-links-hook
               .FormGrid-cell
                 .InputGroup
-                  h2.InputGroup-label Some links for your work (github, etc)
-                  textarea.InputGroup-textarea name="links" placeholder="http://github.com/subvisual"
+                  label.InputGroup-label for="links" Some links for your work (github, etc)
+                  textarea.InputGroup-textarea id="links" name="links" placeholder="http://github.com/subvisual"
 
             .FormGrid-row.FormGrid--noBorder
               .u-defaultThenLargeMargin
@@ -61,26 +61,28 @@ page: development_apply
               .FormGrid-row
                 .FormGrid-cell
                   .InputGroup
-                    h2.InputGroup-label When are you available to start?
-                    input.InputGroup-input type="text" name="availability" required=""
+                    label.InputGroup-label for="availability" When are you available to start?
+                    input.InputGroup-input type="text" id="availability" name="availability" required=""
 
               .FormGrid-row
                 .FormGrid-cell
                   .InputGroup
-                    h2.InputGroup-label What accomplishments/projects are you most proud of? Provide links if you can.
-                    textarea.InputGroup-textarea name="proud-developer" required=""
+                    label.InputGroup-label for="proud-developer"
+                      | What accomplishments/projects are you most proud of? Provide links if you can.
+                    textarea.InputGroup-textarea id="proud-developer" name="proud-developer" required=""
 
               .FormGrid-row
                 .FormGrid-cell
                   .InputGroup
-                    h2.InputGroup-label What do you consider to be your current level as a developer?
-                    textarea.InputGroup-textarea name="level-developer" required=""
+                    label.InputGroup-label for="level-developer"
+                      | What do you consider to be your current level as a developer?
+                    textarea.InputGroup-textarea id="level-developer" name="level-developer" required=""
 
               .FormGrid-row.FormGrid-lastRow
                 .FormGrid-cell
                   .InputGroup
-                    h2.InputGroup-label What do you expect from this program? What do you expect after it?
-                    textarea.InputGroup-textarea name="expectations-developer" required=""
+                    label.InputGroup-label for="expectations-developer" What do you expect from this program? What do you expect after it?
+                    textarea.InputGroup-textarea id="expectations-developer" name="expectations-developer" required=""
 
             .u-smallThenDefaultMargin
             .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
