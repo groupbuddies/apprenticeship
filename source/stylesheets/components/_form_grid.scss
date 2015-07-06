@@ -2,14 +2,14 @@ $FormGrid-border: 2px solid $Theme-color-polar;
 
 .FormGrid-row {
   border-top: $FormGrid-border;
-  border-left: $FormGrid-border;
   border-right: $FormGrid-border;
+  border-left: $FormGrid-border;
 }
 
 .FormGrid-row.FormGrid--noBorder {
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
 }
 
 .FormGrid-row {
@@ -23,8 +23,6 @@ $FormGrid-border: 2px solid $Theme-color-polar;
 .FormGrid-row.FormGrid-lastRow {
   border-bottom: $FormGrid-border;
 }
-
-
 
 .FormGrid-cell {
   width: 100%;
@@ -41,9 +39,9 @@ $FormGrid-border: 2px solid $Theme-color-polar;
 }
 
 .FormGrid-cell--grow2 {
-  flex: 2 0 auto;
+  flex: 2 0 0%;
 }
 
 .FormGrid-cell--grow1 {
-  flex: 1 0 auto;
+  flex: 1 0 0%;
 }
