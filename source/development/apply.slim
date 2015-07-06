@@ -40,13 +40,19 @@ page: development_apply
               .FormGrid-cell.FormGrid-cell--grow1
                 .InputGroup
                   h2.InputGroup-label Phone Number
-                  input.InputGroup-input type="number" name="phone" placeholder="999 999 999" required=""
+                  input.InputGroup-input type="tel" name="phone" placeholder="999 999 999" required=""
 
-            .FormGrid-row.FormGrid-lastRow
+            .FormGrid-row
               .FormGrid-cell
                 .InputGroup
                   h2.InputGroup-label Your email
-                  input.InputGroup-input type="email" name="email" placeholder="johnsnow@subvisual.co" required=""
+                  input.InputGroup-input type="email" name="email" placeholder="developer@subvisual.co" required=""
+
+            .FormGrid-row.FormGrid-lastRow#js-links-hook
+              .FormGrid-cell
+                .InputGroup
+                  h2.InputGroup-label Some links for your work (github, etc)
+                  textarea.InputGroup-textarea name="links" placeholder="http://github.com/subvisual"
 
             .FormGrid-row.FormGrid--noBorder
               .u-defaultThenLargeMargin
@@ -56,12 +62,19 @@ page: development_apply
                 .FormGrid-cell
                   .InputGroup
                     h2.InputGroup-label When are you available to start?
-                    textarea.InputGroup-textarea name="availability" required=""
+                    input.InputGroup-input type="text" name="availability" required=""
+
               .FormGrid-row
                 .FormGrid-cell
                   .InputGroup
                     h2.InputGroup-label What accomplishments/projects are you most proud of? Provide links if you can.
                     textarea.InputGroup-textarea name="proud-developer" required=""
+
+              .FormGrid-row
+                .FormGrid-cell
+                  .InputGroup
+                    h2.InputGroup-label What do you consider to be your current level as a developer?
+                    textarea.InputGroup-textarea name="level-developer" required=""
 
               .FormGrid-row.FormGrid-lastRow
                 .FormGrid-cell
