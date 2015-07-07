@@ -40,6 +40,18 @@ module CustomTemplateHelpers
 
   end
 
+  def nav_burger_class
+    if light_or_transparent_nav?
+      'Burger--light'
+    end
+  end
+
+  def nav_logo_class
+    if light_or_transparent_nav?
+      'NavLogo--mono'
+    end
+  end
+
   # Social share URLs
   def twitter_url
     "https://twitter.com/share?text=“#{page_title}”" +
@@ -68,5 +80,11 @@ module CustomTemplateHelpers
                                           "&title=#{page_title}" +
                                           "&summary=#{page_description}" +
                                           "&source=#{data.site.url}"
+  end
+
+  private
+
+  def light_or_transparent_nav?
+    (current_page.data.nav_class || '').match(/Nav--(light|transparent)/)
   end
 end
