@@ -1,10 +1,13 @@
 //= require velocity/velocity
 //= require jquery
+//= require gsap/src/minified/TweenLite.min
+//= require gsap/src/minified/plugins/CSSPlugin.min
 //= require blue
 
 //= require faq
 //= require collapsed_section
 //= require links
+//= require nav/_logo
 
 $(function() {
   var el = $('.Panel-balloonWrapper');

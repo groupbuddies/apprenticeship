@@ -7,7 +7,7 @@
 
 nav#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}" aria-label=('Main navigation')
   = link_to '/', class: 'Nav-logo'
-    .NavLogo class=nav_logo_class
+    = partial 'nav/logo'
 
   a.Nav-menu href="#"
     .Burger class=nav_burger_class
