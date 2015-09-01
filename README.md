@@ -21,7 +21,7 @@ Autoprefix CSS
 
 ## Deploy
 
-Just run the deploy script:
+Run the deploy script:
 
 ```bash
 bin/deploy
