@@ -18,3 +18,11 @@ Here's some of the other things we are using:
 * [Babel](https://babeljs.io/) - A transpiler for ES6
 * [Autoprefixer](https://github.com/middleman/middleman-autoprefixer) -
 Autoprefix CSS
+
+## Deploy
+
+Run the deploy script:
+
+```bash
+bin/deploy
+```
