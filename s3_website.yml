@@ -1,7 +1,7 @@
 s3_id: <%= ENV["AWS_ACCESS_KEY"] %>
 s3_secret: <%= ENV["AWS_ACCESS_SECRET"] %>
-s3_bucket: test.subvisual.co
-cloudfront_distribution_id: E3C2LFW5COV3H5
+s3_bucket: subvisual.co
+cloudfront_distribution_id: E2JRH2PKS8S5Z1
 s3_endpoint: eu-west-1
 s3_key_prefix: apprenticeship
 
